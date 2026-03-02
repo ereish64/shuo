@@ -1,6 +1,6 @@
 # shuo 说
 
-A voice agent framework in ~600 lines of Python. Call someone, have a conversation.
+A voice agent framework in ~600 lines of Python. 
 
 ```bash
 python main.py +1234567890
@@ -16,9 +16,6 @@ python main.py +1234567890
 ← Flux EndOfTurn "Hey, how's it going?"
 ◆ LISTENING → RESPONDING
 → Start Agent "Hey, how's it going?"
-  Agent: ⏱  LLM first token  +234ms
-  Agent: ⏱  TTS first audio  +412ms  (TTS latency 178ms)
-  Agent: ⏱  Turn complete    +3820ms total
 ← Agent turn done
 ◆ RESPONDING → LISTENING
 ```
@@ -70,8 +67,6 @@ python main.py +1234567890
 ```
 
 ## Tests
-
-24 tests for the pure state machine, no mocking needed:
 
 ```bash
 python -m pytest tests/ -v   # runs in ~0.03s
